@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart | Aura Market</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <aside class="sidebar" id="sidebar">
+        <a href="../index.html" class="brand">&#128722; Aura<span>Market</span></a>
+
+        <nav class="side-nav">
+            <a href="dashboard.html"><i>&#8962;</i>Dashboard</a>
+            <a href="#"><i>&#127881;</i>Explore Events</a>
+            <a href="orders.html"><i>&#128230;</i>My Orders</a>
+            <a href="cart.html" class="active"><i>&#128722;</i>My Cart <b class="badge" id="cartBadge" hidden>0</b></a>
+            <a href="#"><i>&#128197;</i>My Events</a>
+            <a href="#"><i>&#128276;</i>Notifications <b class="badge">3</b></a>
+            <a href="#"><i>&#9881;</i>Settings</a>
+            <a href="#"><i>&#10067;</i>Help Center</a>
+            <a href="#"><i>&#9432;</i>About</a>
+            <hr>
+            <a href="#" id="logout"><i>&#10162;</i>Logout</a>
+        </nav>
+
+        <div class="side-promo">
+            <img src="../image/dashboard-bags.png" alt="">
+            <p>Shop Smart,<br>Live Better &#128155;</p>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+            <form class="search" role="search">
+                <input type="search" placeholder="Search for products, events..." aria-label="Search">
+            </form>
+            <div class="top-right">
+                <button class="bell" aria-label="Notifications">&#128276;<b class="badge">3</b></button>
+                <div class="user">
+                    <button class="avatar" id="avatarBtn" aria-label="Account menu"><span
+                            id="avatarText">U</span></button>
+                    <div class="dropdown" id="dropdown" hidden>
+                        <strong id="menuName">User</strong>
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="cart-banner">
+                <div class="cb-left">
+                    <span class="cb-icon">&#128722;</span>
+                    <div>
+                        <h1>My Cart</h1>
+                        <p>Review your items and proceed to checkout</p>
+                    </div>
+                </div>
+                <img src="../image/cart-hero.png" alt="" class="cb-img">
+                <p class="cb-script">Shop Smart,<br>Live Better</p>
+            </section>
+
+            <section class="cart-layout">
+                <div class="cart-main">
+                    <div class="card cart-card" id="cartCard">
+                        <div class="select-row">
+                            <label class="check-all"><input type="checkbox" id="selectAll"> Select All</label>
+                            <button class="link-danger" id="removeSelected">&#128465; Remove Selected</button>
+                        </div>
+                        <div id="items"></div>
+                    </div>
+                    <button class="clear-btn" id="clearCart">&#128465; Clear Cart</button>
+                </div>
+
+                <aside class="summary">
+                    <h2>&#128722; Order Summary</h2>
+                    <div class="sum-body">
+                        <div class="sum-row"><span id="subLabel">Subtotal (0 items)</span><b id="subtotal">₦0</b></div>
+                        <div class="sum-row"><span>Shipping Fee</span><b id="shipping">₦0</b></div>
+                        <div class="sum-row"><span>Discount</span><b id="discount">- ₦0</b></div>
+                        <div class="sum-total"><span>Total</span><strong id="total">₦0</strong></div>
+
+                        <button class="checkout" id="checkoutBtn">&#128274; Proceed to Checkout &rarr;</button>
+                        <div class="or"><span>or</span></div>
+                        <a href="../index.html#products" class="continue">&#128717; Continue Shopping</a>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="trust">
+                <div><i>&#128737;</i>
+                    <p><b>Secure Checkout</b><small>Your data is safe</small></p>
+                </div>
+                <div><i>&#128666;</i>
+                    <p><b>Fast Delivery</b><small>Across Nigeria</small></p>
+                </div>
+                <div><i>&#127911;</i>
+                    <p><b>24/7 Support</b><small>We're here to help</small></p>
+                </div>
+                <div><i>&#128260;</i>
+                    <p><b>Easy Returns</b><small>No hassle</small></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" hidden></div>
+
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/* Notifications page - loads AFTER dashboard.css */
+
+/* ---------- Banner ---------- */
+.n-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  padding: 1rem 1.6rem;
+  border-radius: 16px;
+  background: linear-gradient(110deg, #d6f3dc 0%, #bfeac7 100%);
+  overflow: hidden;
+}
+.nb-left {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.nb-bell {
+  padding-right: 1.2rem;
+  border-right: 2px solid #8fcf9f;
+  font-size: 3.2rem;
+}
+.n-banner h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+.n-banner p {
+  color: #1f2937;
+}
+
+.nb-gold {
+  position: absolute;
+  right: 24%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+}
+.nb-gold .badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  min-width: 26px;
+  height: 26px;
+  font-size: 0.85rem;
+}
+
+.nb-script {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-6deg);
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.2;
+  color: var(--side);
+  text-align: center;
+}
+
+/* ---------- Toolbar ---------- */
+.n-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.2rem;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 500;
+  color: var(--ink);
+}
+.tab:hover {
+  border-color: var(--green);
+}
+.tab.active {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.mark-all {
+  padding: 0.55rem 1.3rem;
+  border: 1.5px solid var(--green-dark);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--green-dark);
+  font-weight: 600;
+}
+.mark-all:hover:not(:disabled) {
+  background: var(--mint);
+}
+.mark-all:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- List ---------- */
+.n-list {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(7, 65, 58, 0.06);
+}
+
+.n-item {
+  display: grid;
+  grid-template-columns: 56px 1fr auto 24px;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 0;
+  border-left: 4px solid transparent;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  text-align: left;
+  color: inherit;
+}
+.n-item:last-child {
+  border-bottom: 0;
+}
+.n-item:hover {
+  background: #f6fbf7;
+}
+.n-item.unread {
+  border-left-color: var(--green-dark);
+  background: #e4f6e8;
+}
+.n-item.unread:hover {
+  background: #d9f1de;
+}
+
+.n-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.n-icon.orders {
+  background: #16a34a;
+}
+.n-icon.events {
+  background: #8b5cf6;
+}
+.n-icon.promotions {
+  background: #f59e0b;
+  font-weight: 700;
+}
+.n-icon.account {
+  background: #3b6df0;
+}
+.n-icon .dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+.n-body b {
+  display: block;
+  font-size: 1.05rem;
+}
+.n-body p {
+  margin: 0.1rem 0 0.2rem;
+  color: #1f2937;
+}
+.n-body time {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.n-pill {
+  align-self: start;
+  padding: 0.15rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.n-pill.new {
+  background: #c9f0d1;
+  color: #15803d;
+}
+.n-pill.read {
+  background: #e8ecef;
+  color: #4b5563;
+}
+
+.n-arrow {
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+
+.n-empty {
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+.n-empty .big {
+  font-size: 3rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .nb-gold {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .nb-script {
+    display: none;
+  }
+  .nb-bell {
+    font-size: 2.4rem;
+    padding-right: 0.8rem;
+  }
+  .n-banner h1 {
+    font-size: 1.5rem;
+  }
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 0.3rem;
+  }
+  .tab {
+    white-space: nowrap;
+  }
+  .n-item {
+    grid-template-columns: 44px 1fr 20px;
+    padding: 0.8rem;
+  }
+  .n-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  .n-pill {
+    display: none;
+  }
+}

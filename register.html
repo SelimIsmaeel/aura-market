@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Aura Market</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">Aura<span>Market</span></a>
+        <nav class="menu-link" id="menu">
+            <a href="index.html">&#8962; Home</a>
+            <a href="index.html#products">&#9638; Products</a>
+            <a href="index.html#categories">&#127991; Categories</a>
+            <a href="#">&#9432; About</a>
+            <a href="#">&#9993; Contact</a>
+        </nav>
+        <div class="head-btn">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="register.html" class="btn-solid">Register</a>
+        </div>
+        <img src="image/andrsrxn--menu-burger.svg" class="hamburger" id="burger" alt="Menu">
+    </header>
+
+    <main class="reg-wrap">
+        <section class="welcome">
+            <img src="image/register-hero.png" alt="" class="welcome-img">
+
+            <span class="tag">&#128722; Join Aura Market</span>
+            <h1>Create Your <span>Account</span></h1>
+            <p class="lead">Get started in seconds. You can complete your profile later.</p>
+
+            <ul class="checks">
+                <li>Shop Smarter</li>
+                <li>Get Exclusive Deals</li>
+                <li>Track Your Orders</li>
+                <li>Enjoy a Better Experience</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <div class="icon-circle">&#128100;&#43;</div>
+            <h2>Register</h2>
+            <p class="sub">Fill in the form below to create your account.</p>
+
+            <form id="registerForm">
+                <div class="field">
+                    <span class="ico">&#9993;</span>
+                    <input type="email" id="email" placeholder="Email Address" aria-label="Email Address"
+                        autocomplete="email" required>
+                </div>
+                <p class="err" id="emailErr"></p>
+
+                <div class="field">
+                    <span class="ico">&#128100;</span>
+                    <input type="text" id="fullName" placeholder="Full Name" aria-label="Full Name" autocomplete="name"
+                        required>
+                </div>
+                <p class="err" id="nameErr"></p>
+
+                <div class="field">
+                    <span class="ico">&#128274;</span>
+                    <input type="password" id="password" placeholder="Password" aria-label="Password"
+                        autocomplete="new-password" minlength="6" required>
+                    <button type="button" class="eye" data-target="password"
+                        aria-label="Show password">&#128065;</button>
+                </div>
+                <p class="err" id="pwErr"></p>
+
+                <div class="field">
+                    <span class="ico">&#128274;</span>
+                    <input type="password" id="confirm" placeholder="Confirm Password" aria-label="Confirm Password"
+                        autocomplete="new-password" required>
+                    <button type="button" class="eye" data-target="confirm"
+                        aria-label="Show confirm password">&#128065;</button>
+                </div>
+                <p class="err" id="confirmErr"></p>
+
+                <button type="submit" class="submit">&#128100;&#43; Create Account</button>
+                <p class="msg" id="formMsg" role="status"></p>
+            </form>
+
+            <div class="divider"><span>or continue with</span></div>
+            <div class="social">
+                <button type="button" class="soc"><b class="g">G</b> Continue with Google</button>
+                <button type="button" class="soc"><b class="f">f</b> Continue with Facebook</button>
+            </div>
+
+            <p class="switch">Already have an account? <a href="login.html">Login here</a></p>
+            <p class="terms">&#128737; By registering, you agree to our <a href="#">Terms &amp; Privacy Policy</a>.</p>
+        </section>
+    </main>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>

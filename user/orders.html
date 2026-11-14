@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | Aura Market</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/orders.css">
+</head>
+
+<body>
+    <aside class="sidebar" id="sidebar">
+        <a href="../index.html" class="brand">&#128722; Aura<span>Market</span></a>
+
+        <nav class="side-nav">
+            <a href="dashboard.html"><i>&#8962;</i>Dashboard</a>
+            <a href="#"><i>&#127881;</i>Explore Events</a>
+            <a href="orders.html" class="active"><i>&#128230;</i>My Orders</a>
+            <a href="cart.html"><i>&#128722;</i>My Cart <b class="badge" id="cartBadge" hidden>0</b></a>
+            <a href="#"><i>&#128197;</i>My Events</a>
+            <a href="notifications.html"><i>&#128276;</i>Notifications <b class="badge">3</b></a>
+            <a href="#"><i>&#9881;</i>Settings</a>
+            <a href="#"><i>&#10067;</i>Help Center</a>
+            <a href="#"><i>&#9432;</i>About</a>
+            <hr>
+            <a href="#" id="logout"><i>&#10162;</i>Logout</a>
+        </nav>
+
+        <!-- <div class="side-promo">
+            <img src="../image/dashboard-bags.png" alt="">
+            <p>Shop Smart,<br>Live Better &#128155;</p>
+        </div> -->
+    </aside>
+
+    <div class="main">
+        <header class="topbar">
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+            <form class="search" role="search">
+                <input type="search" placeholder="Search for products, events..." aria-label="Search">
+            </form>
+            <div class="top-right">
+                <button class="bell" aria-label="Notifications">&#128276;<b class="badge">3</b></button>
+                <div class="user">
+                    <button class="avatar" id="avatarBtn" aria-label="Account menu"><span
+                            id="avatarText">U</span></button>
+                    <div class="dropdown" id="dropdown" hidden>
+                        <strong id="menuName">User</strong>
+                        <a href="#">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="page-head">
+                <div class="ph-left">
+                    <span class="ph-icon">&#128230;</span>
+                    <div>
+                        <h1>My Orders</h1>
+                        <p>Track and manage all your orders in one place.</p>
+                    </div>
+                </div>
+                <div class="ph-promo">
+                    <span>&#128717;</span>
+                    <p>Shop Smart,<br>Live Better</p>
+                </div>
+            </section>
+
+            <nav class="tabs" id="tabs" aria-label="Filter orders"></nav>
+
+            <section class="orders" id="orders"></section>
+
+            <section class="help-bar">
+                <span class="hb-ico">&#127911;</span>
+                <div>
+                    <h3>Need Help?</h3>
+                    <p>Our support team is here for you 24/7.</p>
+                </div>
+                <a href="#" class="btn">&#128172; Contact Support &rarr;</a>
+            </section>
+        </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" hidden></div>
+
+    <script src="../js/orders.js"></script>
+</body>
+
+</html>

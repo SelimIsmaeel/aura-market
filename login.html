@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Aura Market</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">Aura<span>Market</span></a>
+        <nav class="menu-link" id="menu">
+            <a href="index.html">&#8962; Home</a>
+            <a href="index.html#products">&#9638; Products</a>
+            <a href="index.html#categories">&#127991; Categories</a>
+            <a href="#">&#9432; About</a>
+            <a href="#">&#9993; Contact</a>
+        </nav>
+        <div class="head-btn">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="register.html" class="btn-solid">Register</a>
+        </div>
+        <img src="image/andrsrxn--menu-burger.svg" class="hamburger" id="burger" alt="Menu">
+    </header>
+
+    <main class="login-wrap">
+        <section class="welcome">
+            <img src="image/hero_cart.png" alt="" class="welcome-img">
+
+            <span class="tag">&#128722; Shop Smart, Live Better</span>
+            <h1>Welcome to <span>Aura Market</span></h1>
+            <p class="lead">Discover amazing products at the best prices. Shop with confidence!</p>
+            <a href="index.html#products" class="cta">Start Shopping &rarr;</a>
+            <div class="perks">
+                <div><i>&#128666;</i>
+                    <p><b>Fast Delivery</b><small>Across Nigeria</small></p>
+                </div>
+                <div><i>&#128737;</i>
+                    <p><b>Secure Payment</b><small>&amp; Checkout</small></p>
+                </div>
+                <div><i>&#127911;</i>
+                    <p><b>24/7 Support</b></p>
+                </div>
+            </div>
+
+            <div class="cats-wrap">
+                <div class="cats-head">
+                    <h3>Popular Categories</h3>
+                    <a href="index.html#categories">View All &rarr;</a>
+                </div>
+                <div class="cats">
+                    <a href="#" class="cat"><img src="image/laptop.png" alt="">Electronics</a>
+                    <a href="#" class="cat"><img src="image/cloth.png" alt="">Fashion</a>
+                    <a href="#" class="cat"><img src="image/house1.png" alt="">Home &amp; Living</a>
+                    <a href="#" class="cat"><img src="image/headset.png" alt="">Accessories</a>
+                    <a href="#" class="cat"><img src="image/Beauty.png" alt="">Beauty</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="icon-circle"><img src="/image/user-lock-solid-full.svg" alt=""></div>
+            <h2>Login to Your Account</h2>
+            <p class="sub">Welcome back! Please login to continue shopping.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="field">
+                    <span class="ico">&#9993;</span>
+                    <input type="email" id="email" placeholder="Email Address" autocomplete="email" required>
+                </div>
+                <p class="err" id="emailErr"></p>
+
+                <div class="field">
+                    <span class="ico">&#128274;</span>
+                    <input type="password" id="password" placeholder="Password" autocomplete="current-password"
+                        required>
+                    <button type="button" class="eye" id="togglePw" aria-label="Show password">&#128065;</button>
+                </div>
+                <p class="err" id="pwErr"></p>
+
+                <div class="row">
+                    <label class="check"><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#" id="forgot">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="submit">&#10140; Login</button>
+                <p class="msg" id="formMsg" role="status"></p>
+            </form>
+
+            <div class="divider"><span>or continue with</span></div>
+            <div class="social">
+                <button type="button" class="soc"><b class="g">G</b> Continue with Google</button>
+                <button type="button" class="soc"><b class="f">f</b> Continue with Facebook</button>
+            </div>
+
+            <p class="switch">Don&rsquo;t have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

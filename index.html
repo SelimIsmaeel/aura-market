@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraMarket | Shop Smart, Live Better</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="image/logo (2).png" alt="ShopEasy"></a>
+
+        <nav class="menu-link" id="menu">
+            <a href="#" class="active">Home</a>
+            <a href="#products" style="display: flex;">Products</a>
+            <!-- <img width="20px" src="/image/boxicons--arrow-down.svg" alt=""></a> -->
+            <a href="#categories">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="head-right">
+            <form class="search" role="search">
+                <input type="search" placeholder="Search for products...">
+            </form>
+            <a href="#" class="cart">
+                <img src="image/basil--shopping-cart-solid.svg" alt="">
+                <span id="cartCount">2</span>
+            </a>
+            <div class="head-btn">
+                <button class="btn-outline" onclick="goToLogin()">Login</button>
+                <button class="btn-solid" onclick="goToRegister()">Register</button>
+            </div>
+            <img src="image/andrsrxn--menu-burger.svg" class="hamburger" id="burger" alt="Menu">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <span class="tag">Shop Smart, Live Better</span>
+                <h1>Welcome to <br><em>AuraMarket</em></h1>
+                <p>Discover amazing products at the best prices.<br>Shop with confidence!</p>
+                <a href="#products" class="btn-solid btn-lg">Start Shopping &rarr;</a>
+            </div>
+            <div class="hero-badge">Up to <strong>50% OFF</strong></div>
+            <img class="hero-img" src="image/hero.png" alt="Smiling shopper holding shopping bags">
+            <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+        </section>
+
+        <section class="section" id="categories">
+            <div class="section-head">
+                <h2>Popular Categories</h2>
+                <a href="#" class="view-all">View All &rarr;</a>
+            </div>
+            <div class="cat-grid">
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/laptop.png"
+                            alt=""></span>Electronics</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/cloth.png"
+                            alt=""></span>Fashion</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/house1.png" alt=""></span>Home
+                    &amp; Living</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/headset.png"
+                            alt=""></span>Accessories</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/dog.png" alt=""></span>Beauty</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/ball.png" alt=""></span>Sports</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/dog.png" alt=""></span>Pet Care</a>
+                <a href="#" class="cat"><span class="cat-grid-image"><img src="image/chair.png"
+                            alt=""></span>Furniture</a>
+            </div>
+        </section>
+
+        <section class="section" id="products">
+            <div class="section-head">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <img src="image/logo (2).png" alt="ShopEasy">
+                <p>Shop Smart, Live Better</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#">Home</a><a href="#">Products</a><a href="#">Categories</a><a href="#">About</a><a
+                    href="#">Contact</a>
+            </div>
+            <div>
+                <h4>Customer Support</h4>
+                <a href="#">FAQ</a><a href="#">Shipping Info</a><a href="#">Returns &amp; Refunds</a><a href="#">Contact
+                    Us</a>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <div class="socials">
+                    <a href="#">f</a><a href="#">t</a>
+                    <a href="#">i</a><a href="#">&#9654;</a>
+                    <a href="#">w</a>
+                </div>
+                <p class="small">Subscribe to our newsletter</p>
+                <form class="subscribe">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="admin-box">
+                <h4>&#128737; Admin Portal</h4>
+                <a href="admin/login.html" class="btn-outline-light">Admin Login</a>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <span>&copy; 2026 ShopEasy. All rights reserved.</span>
+            <span><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
